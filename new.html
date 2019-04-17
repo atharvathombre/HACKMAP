@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Atharva Search
+	</title>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="first.css">
+	<link rel="shortcut icon" href="icon.png">
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Underdog' rel='stylesheet'>
+	<script href="typeahead.js"></script>
+	<script src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.jquery.js"></script>
+
+<script  src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <i class="fa fa-spinner fa-spin" style="font-size:30px; color: white;"></i>&emsp;&emsp;
+  <img class="navbar-brand" href="#" title="Atharva Search" src="lll.png">&emsp;
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavidMarkup" aria-controls="navbarNavidMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavidMarkup">
+    <div class="navbar-nav" style="margin-left: 70%; font-size: 17px;">
+      
+      <a class="nav-item nav-link active" href="index.html">Home&emsp;<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="atharva.html" target="_blank">About Me&emsp;</a>
+      <a class="nav-item nav-link" href="how.html" target="_blank">How This Works&emsp;</a>
+      <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+    </div>
+  </div>
+</nav>
+	<!-- <ul>
+		<li><a href="atharva.html" target="_blank">About Me</a></li>
+		<li><a href="how.html" target="_blank">How This Page Works?</a></li>
+		<li><a href="index.html">Home</a></li>
+	</ul> -->
+	<center>
+	<div class="container4">
+			<h1 title="Atharva Search">Atharva Search</h1> 
+			<br>
+	<form id="search-form">
+
+     			<input id="s" type="text" autocomplete="off" name="search" class="round chef" placeholder="       					Google Search......" onmouseover="mouseover()" onmouseout="mouseout()" >&emsp;
+     			<i id="mic" class="fa fa-microphone fa-lg" title="Voice Search" ></i>
+     			<audio class="sound" src="chime.mp3"></audio>
+     			<br>
+     			<input type="image" src="https://img.icons8.com/color/48/000000/google-logo.png" id="Google" class="new" onclick="run()" title="Click here To Search">
+    </form>
+		<br><br>
+
+		<img src="https://img.icons8.com/color/48/000000/google-logo.png" id="Google" onclick="fun(this)" title="Google">&emsp;
+		<img src="https://img.icons8.com/color/48/000000/facebook.png" id="Facebook" onclick="fun(this)" title="Facebook">&emsp;
+		<img src="bing.png" id="Bing" onclick="fun(this)" title="Bing" >&emsp;
+		<img src="https://img.icons8.com/color/48/000000/amazon.png" id="Amazon" onclick="fun(this)" title="Amazon">&emsp;
+		<img src="https://img.icons8.com/color/48/000000/google-maps.png" id="Maps" onclick="fun(this)" title="Maps">&emsp;
+		<img src="https://img.icons8.com/color/48/000000/youtube-play.png" id="Youtube" onclick="fun(this)" title="Youtube">&emsp;
+		<img src="yahoo.png" id="Yahoo" onclick="fun(this)" title="Yahoo">&emsp;
+		<img src="https://img.icons8.com/metro/26/000000/wikipedia.png" id="Wikipedia" onclick="fun(this)" title="Wikipedia">&emsp;
+		<img src="https://img.icons8.com/color/48/000000/twitter.png" id="Twitter" onclick="fun(this)" title="Twitter">&emsp;
+		<br>
+		<br>
+		<img src="https://img.icons8.com/color/80/000000/duckduckgo.png" id="DuckDuckGo" onclick="fun(this)" title="DuckDuckGo">&emsp;
+		<img src="media.png" id="Dailymotion" onclick="fun(this)" title="Dailymotion">&emsp;
+		<img src="shopping.png" id="Flipkart" onclick="fun(this)" title="Flipkart">&emsp;
+		<img src="linkedin.png" id="Linkedin" onclick="fun(this)" title="Linkedin">&emsp;
+	</div>
+	</center>
+	
+</body>
+	<script>
+		/*function another()
+		{	var ath=document.getElementById("s").value;
+			//alert(ath);
+			document.getElementById("s").value=document.getElementById('http://google.com/complete/search?q='+ath+'&hl=en'); 
+		}*/
+		function mouseover()
+		{	document.getElementById("s").style.boxShadow = "10px 20px 30px lightblue";
+
+		}
+		function mouseout()
+		{
+			document.getElementById("s").style.boxShadow = "0px 0px 0px";	
+		}
+		function fun(e)
+		{	var x=e.id;
+			//console.log(x);
+			document.getElementsByClassName("new")[0].id=x;
+			//console.log(document.getElementsByClassName("new")[0].id);
+			var y=e.src;
+			//console.log(y);
+			document.getElementsByClassName("new")[0].src=y;
+			//console.log(document.getElementsByClassName("new")[0].src);
+			//var x=document.getElementsByClassName("new")[0].id;
+			if(x=="Google") 
+			{	
+				document.getElementById("s").placeholder="       					Google Search....";
+				
+			}
+			else
+			if(x=="Facebook")
+			{
+				document.getElementById("s").placeholder="       					Facebook Search....";
+				d
+			}
+			else
+			if(x=="Bing")
+			{
+				document.getElementById("s").placeholder="       					Bing Search....";
+			}
+			else
+			if(x=="Amazon")
+			{
+				document.getElementById("s").placeholder="       					Amazon Search....";
+			}
+			else
+			if(x=="Maps")
+			{
+				document.getElementById("s").placeholder="       					Maps Search....";
+				$.typeahead({
+    		input: '#s',
+    		order: "desc",
+    		source: {
+        		data: [
+            "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda",
+            "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh",
+            "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia",
+            "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burma",
+            "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Central African Republic", "Chad",
+            "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic", "Congo, Republic of the",
+            "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti",
+            "Dominica", "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador",
+            "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Fiji", "Finland", "France", "Gabon",
+            "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Greenland", "Grenada", "Guatemala", "Guinea",
+            "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hong Kong", "Hungary", "Iceland", "India",
+            "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan",
+            "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kuwait", "Kyrgyzstan", "Laos",
+            "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg",
+            "Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands",
+            "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Mongolia", "Morocco", "Monaco",
+            "Mozambique", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger",
+            "Nigeria", "Norway", "Oman", "Pakistan", "Panama", "Papua New Guinea", "Paraguay", "Peru",
+            "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Samoa", "San Marino",
+            "Sao Tome", "Saudi Arabia", "Senegal", "Serbia and Montenegro", "Seychelles", "Sierra Leone",
+            "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "Spain",
+            "Sri Lanka", "Sudan", "Suriname", "Swaziland", "Sweden", "Switzerland", "Syria", "Taiwan",
+            "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey",
+            "Turkmenistan", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States",
+            "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
+        ]
+    },
+    callback: {
+        onInit: function (node) {
+            console.log('Typeahead Initiated on ' + node.selector);
+        }
+    }
+});
+			}
+			else
+			if(x=="Youtube")
+			{
+				document.getElementById("s").placeholder="       					Youtube Search....";
+			}
+			else
+			if(x=="Yahoo")
+			{
+				document.getElementById("s").placeholder="       					Yahoo Search....";
+			}
+			else
+			if(x=="Wikipedia")
+			{
+				document.getElementById("s").placeholder="       					Wikipedia Search....";
+			}
+			else
+			if(x=="Twitter")
+			{
+				document.getElementById("s").placeholder="       					Twitter Search....";
+			}
+			else
+			if(x=="DuckDuckGo")
+			{
+				document.getElementById("s").placeholder="       					DuckDuckGo Search....";
+			}
+			else
+			if(x=="Dailymotion")
+			{
+				document.getElementById("s").placeholder="       					Dailymotion Search....";
+			}
+			else
+			if(x=="Flipkart")
+			{
+				document.getElementById("s").placeholder="       					Flipkart Search....";
+			}
+			else
+			if(x=="Linkedin")
+			{
+				document.getElementById("s").placeholder="       					Linkedin Search....";
+			}
+		}
+		function google()
+		{	var A=document.getElementById('s').value;
+			window.open('https://www.google.com/search?q='+A,'_blank');
+		}
+		function facebook()
+		{	var A=document.getElementById('s').value;
+			window.open('https://www.facebook.com/search/str/'+A+'/keywords_search','_blank');
+				
+		}
+		function bing()
+		{	var A=document.getElementById('s').value;
+			window.open('https://www.bing.com/search?q='+A,'_blank');
+		}
+		function amazon()
+		{	var A=document.getElementById('s').value;
+			window.open('https://www.amazon.in/s?k='+A,'_blank');
+		}
+		function maps()
+		{	var A=document.getElementById('s').value;
+			window.open('https://www.google.com/maps/place/'+A,'_blank');
+		}
+		function youtube()
+		{	var A=document.getElementById('s').value;
+			window.open('https://www.youtube.com/results?search_query='+A,'_blank');
+		}
+		function yahoo()
+		{	var A=document.getElementById('s').value;
+			window.open('https://in.search.yahoo.com/search;_ylt=AwrwI4U3bLNchnEA3wq6HAx.;_ylc=X1MDMjExNDcyMzAwMgRfcgMyBGZyAwRncHJpZAM1YWQucThLVlFGV2NoV09BRUFsR0NBBG5fcnNsdAMwBG5fc3VnZwM1BG9yaWdpbgNpbi5zZWFyY2gueWFob28uY29tBHBvcwMwBHBxc3RyAwRwcXN0cmwDBHFzdHJsAzQEcXVlcnkDc2ZmZgR0X3N0bXADMTU1NTI2MjUyOA--?fr2=sb-top-in.search&p='+A+'+&fr=sfp&iscqry=','_blank');
+		}
+		function wiki()
+		{	var A=document.getElementById('s').value;
+			window.open('https://en.wikipedia.org/w/index.php?search='+A+'&title=Special%3ASearch&go=Go&ns0=1','_blank');
+		}
+		function twitter()
+		{	var A=document.getElementById('s').value;
+			window.open('https://twitter.com/search?q='+A,'_blank');
+		}
+		function duck()
+		{	var A=document.getElementById('s').value;
+			window.open('https://duckduckgo.com/?q='+A+'&ia=software','_blank');
+		}
+		function daily()
+		{	var A=document.getElementById('s').value;
+			window.open('https://www.dailymotion.com/search/'+A,'_blank');
+		}
+		function flip()
+		{	var A=document.getElementById('s').value;
+			window.open('https://www.flipkart.com/search?q='+A,'_blank');
+		}
+		function linkedin()
+		{	var A=document.getElementById('s').value;
+			window.open('https://www.linkedin.com/search/results/all/?keywords='+A+'&origin=GLOBAL_SEARCH_HEADER','_blank');
+		}
+		function run()
+		{	
+			var x=document.getElementsByClassName("new")[0].id;
+			if(x=="Google") 
+			{	var m=document.getElementById("s").value;
+				if(m=="")
+				{	alert("PLEASE INPUT SOMETHING!!!");
+					return false;
+				}
+				else
+				{	google();
+				}
+			}
+			else
+			if(x=="Facebook")
+			{	var m=document.getElementById("s").value;
+				if(m=="")
+				{	alert("PLEASE INPUT SOMETHING!!");
+					return false;
+				}
+				else
+				{	facebook();
+				}
+			}
+			else
+			if(x=="Bing")
+			{	var m=document.getElementById("s").value;
+				if(m=="")
+				{	alert("PLEASE INPUT SOMETHING!!");
+					return false;
+				}
+				else
+					bing();
+			}
+			else
+			if(x=="Amazon")
+			{	var m=document.getElementById("s").value;
+				if(m=="")
+				{	alert("PLEASE INPUT SOMETHING!!");
+					return false;
+				}
+				else
+					amazon();
+			
+			}
+			else
+			if(x=="Maps")
+			{	var m=document.getElementById("s").value;
+				if(m=="")
+				{	alert("PLEASE INPUT SOMETHING!!");
+					return false;
+				}
+				else
+					maps();
+			}
+			else
+			if(x=="Youtube")
+			{	var m=document.getElementById("s").value;
+				if(m=="")
+				{	alert("PLEASE INPUT SOMETHING!!");
+					return false;
+				}
+				else
+					youtube();
+			}
+			else
+			if(x=="Yahoo")
+			{	var m=document.getElementById("s").value;
+				if(m=="")
+				{	alert("PLEASE INPUT SOMETHING!!");
+					return false;
+				}
+				else
+					yahoo();
+			}
+			else
+			if(x=="Wikipedia")
+			{	var m=document.getElementById("s").value;
+				if(m=="")
+				{	alert("PLEASE INPUT SOMETHING!!");
+					return false;
+				}
+				else
+					wiki();
+			}
+			else
+			if(x=="Twitter")
+			{	var m=document.getElementById("s").value;
+				if(m=="")
+				{	alert("PLEASE INPUT SOMETHING!!");
+					return false;
+				}
+				else
+					twitter();
+			}
+			else
+			if(x=="DuckDuckGo")
+			{	var m=document.getElementById("s").value;
+				if(m=="")
+				{	alert("PLEASE INPUT SOMETHING!!");
+					return false;
+				}
+				else
+					duck();
+			}
+			else
+			if(x=="Dailymotion")
+			{	var m=document.getElementById("s").value;
+				if(m=="")
+				{	alert("PLEASE INPUT SOMETHING!!");
+					return false;
+				}
+				else
+					daily();
+			}
+			else
+			if(x=="Flipkart")
+			{	var m=document.getElementById("s").value;
+				if(m=="")
+				{	alert("PLEASE INPUT SOMETHING!!");
+					return false;
+				}
+				else
+					flip();
+			}
+			else
+			if(x=="Linkedin")
+			{	var m=document.getElementById("s").value;
+				if(m=="")
+				{	alert("PLEASE INPUT SOMETHING!!");
+					return false;
+				}
+				else
+					linkedin();
+			}
+		}
+		window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
+		const synth = window.speechSynthesis;
+		const recognition = new SpeechRecognition();
+		const icon = document.querySelector('i.fa.fa-microphone');
+		let paragraph = document.createElement('p');
+		let container = document.querySelector('#s');
+		container.appendChild(paragraph);
+		const sound = document.querySelector('.sound');
+		icon.addEventListener('click', () => {
+  		sound.play();
+  		dictate();
+	});
+		const dictate = () => {
+  	recognition.start();
+  	recognition.onresult = (event) => {
+    const speechToText = event.results[0][0].transcript;
+    
+    document.querySelector("#s").value = speechToText;
+
+    if (event.results[0].isFinal) {
+
+      if (speechToText.includes('what is the time')) 
+      {
+          speak(getTime);
+      };
+      
+      if (speechToText.includes('what is today\'s date')) {
+          speak(getDate);
+      };
+      
+      if (speechToText.includes('what is the weather today')) {
+          getTheWeather(speechToText);
+
+      };
+    }
+  }
+}
+
+const speak = (action) => {
+  utterThis = new SpeechSynthesisUtterance(action());
+  synth.speak(utterThis);
+};
+
+const getTime = () => {
+  const time = new Date(Date.now());
+  return `the time is ${time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })}`
+};
+
+const getDate = () => {
+  const time = new Date(Date.now())
+  return `today is ${time.toLocaleDateString()}`;
+};
+
+const getTheWeather = (speech) => {
+  fetch(`http://api.openweathermap.org/data/2.5/weather?q=${speech.split(' ')[5]}&appid=58b6f7c78582bffab3936dac99c31b25&units=metric`) 
+  .then(function(response)
+  {
+    return response.json();
+  })
+  .then(function(weather){
+    if (weather.cod === '404') {
+      utterThis = new SpeechSynthesisUtterance(`I cannot find the weather for ${speech.split(' ')[5]}`);
+      synth.speak(utterThis);
+      return;
+    }
+    utterThis = new SpeechSynthesisUtterance(`the weather condition in ${weather.name} is mostly full of ${weather.weather[0].description} at a temperature of ${weather.main.temp} degrees Celcius`);
+    synth.speak(utterThis);
+  });
+};
+
+		
+		</script>
+</html>

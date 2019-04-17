@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		About Me!!
+	</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="icon.png">
+<link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Underdog' rel='stylesheet'>
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+#me{
+  font: 400 50px/1.3 'Lobster Two', Helvetica, sans-serif;
+  color: black;
+  /*text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(241, 234, 44, 0.94);*/
+}
+#name
+{
+	font: 400 33px/1.3 'Underdog', Helvetica, sans-serif;
+  color: black;
+
+}
+</style>
+<script>
+	let c=0;
+	function fun()
+	{	c++;
+		if(c%2==0)
+		{	document.getElementById('demo').style.display='none';
+		}
+		else
+		if(c%2!=0)
+		{	document.getElementById('demo').style.display='block';
+		}	
+
+	}
+
+</script>
+</head>
+<body >
+	<center><h1 id="me"><strong><u>About Me!!</u></strong></h1></center>
+<div class="card">
+  <img src="download.jpg" alt="Atharva" style="width:100%">
+  <h1 id="name"><strong>Atharva Thombre</strong></h1>
+  <p class="title">Student (B.TECH CSE) First Year</p>
+  <p>Jaypee University Of Engineering & Technology ,GUNA</p>
+  <div style="margin: 24px 0;">
+  	<a href="https://github.com/atharvathombre" target="_blank"><i class="fa fa-github-square"></i></a>
+    <a href="https://twitter.com/ThombreAtharva" target="_blank"><i class="fa fa-twitter"></i></a>  
+    <a href="https://www.linkedin.com/in/atharva-thombre-a0a969175/" target="_blank"><i class="fa fa-linkedin"></i></a>  
+    <a href="https://www.facebook.com/atharva.thombre.10" target="_blank"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button onclick="fun()">Contact</button></p>
+  <p id="demo" style="display:none;font-family: Underdog;"><strong>Mobile No. - +91 7489645709<br>Email - atharva.thombre30@gmail.com</strong></p>
+</div>
+</body>
+</html>
